@@ -1,0 +1,64 @@
+###
+
+GET http://127.0.0.1:8000/
+
+
+###
+
+GET http://192.168.114.1:80/
+
+
+###
+
+POST http://127.0.0.1:8000/items/
+accept: application/json
+content-type: application/json
+
+{
+  "name": "eunyoung",
+  "description": "test",
+  "price": 10,
+  "tax": 20
+}
+
+
+###
+
+POST http://192.168.114.1:80/items/
+accept: application/json
+content-type: application/json
+
+{
+  "name": "eunyoung",
+  "description": "test",
+  "price": 10,
+  "tax": 20
+}
+
+
+###
+
+PUT http://127.0.0.1:8000/items/5?q=test
+accept: application/json
+content-type: application/json
+
+{
+  "name": "eunyoung",
+  "description": "test",
+  "price": 10,
+  "tax": 20
+}
+
+
+###
+
+PUT http://192.168.114.1:80/items/5?q=test
+accept: application/json
+content-type: application/json
+
+{
+  "name": "eunyoung",
+  "description": "test",
+  "price": 10,
+  "tax": 20
+}
